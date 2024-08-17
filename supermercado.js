@@ -34,3 +34,8 @@ document.querySelector('input[type=submit]')
 
 });
 
+document.querySelector('button[name=limpar]').addEventListener('click', ()=>{
+    itens = [];
+    document.querySelector('.lista-produtos').innerHTML = "";
+    document.querySelector('.soma-produto h1').innerHTML = "R$ 0";
+});
